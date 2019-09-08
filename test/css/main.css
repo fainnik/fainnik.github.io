@@ -38,16 +38,29 @@ body {
 
 
 .logo {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .page {
 	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 0 80px;
 }
 
@@ -57,10 +70,19 @@ body {
 	width: 100%;
 	max-width: 504px;
 	text-align: center;;
+	display: -webkit-box;;
+	display: -ms-flexbox;;
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	background-color: #FFF;
 	border-radius: 8px;
 	padding: 0 48px;
@@ -95,7 +117,8 @@ body {
 	outline: none;
 	margin: 32px 0;
 	border: 1px solid #F1F1F1;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .authorization__input:focus {
@@ -107,7 +130,8 @@ body {
 .authorization__button {
 	padding: 15px 53px;
 	background: #ED4159;
-	box-shadow: 0px 4px 16px rgba(237, 65, 89, 0.4);
+	-webkit-box-shadow: 0px 4px 16px rgba(237, 65, 89, 0.4);
+	        box-shadow: 0px 4px 16px rgba(237, 65, 89, 0.4);
 	border-radius: 100px;
 	border: none;
 	font-family: "GothamProMedium";
@@ -123,7 +147,10 @@ body {
 .authorization__button:hover {
 	background: #fff;
 	color: #ED4159;
-	box-shadow: 0px 6px 20px rgba(237, 65, 89, 0.4);
+	-webkit-box-shadow: 0px 6px 20px rgba(237, 65, 89, 0.4);
+	        box-shadow: 0px 6px 20px rgba(237, 65, 89, 0.4);
+	-webkit-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
 	transition: all .2s ease-out;	
 }
 
@@ -221,4 +248,3 @@ body {
 		line-height: 22px;
 	}
 }
-
